@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable colour</title>
+    <style>
+        .button{
+            --color:green;
+            color: var(--color);
+        }
+        .button{
+            --color:green;
+            padding: 0.5rem;
+            border: 1px solid var(--color);
+        }
+        .btn-red{
+            --color:red;
+        }
+        .button:hover{
+            --color:blue;
+        }
+        #container{
+            width: calc(100% - 500px);
+            height: 50vh;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <a href="#" class="button">Button Green</a>
+        <a href="#" class="button btn-red">Button Red</a>
+        <a href="#" class="button">Button Hover On</a>
+        
+    </div>
+    <div id="container"></div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem_09</title>
+    <style>
+        :root{
+           --display: flex;
+           --flex-direction: column;
+            --color:#534f4f;
+            --color-aqua:aqua;
+            --color-grey:grey;
+        }
+        body{
+            height: 98vh;
+            background-color: #fff;
+            width: 98vw;
+            padding: 10px;
+            border: 2px solid black;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        }
+        section{
+            background-color: #111010;
+            justify-content: center;
+            align-items: center;
+            display: var(--display);
+            flex-direction: var(--flex-direction);
+            width: 450px;
+            height: 400px;
+            padding: 0px 5px 0px 5px ;
+            border-radius: 10px;
+        }
+        img{
+            width: 210px;
+            height: 120px;
+        }
+        div{            
+            display: var(--display);
+            flex-direction: var(--flex-direction);
+           align-items: center;
+        }
+        h1{
+            --color: white;
+            color: var(--color);
+            font-size: 30px;
+            justify-content: center;
+        }
+        .top{
+            width: 100%;
+        }
+        p{
+            color:var(--color);
+        }
+        .content{
+            overflow-y: scroll;
+            padding: 10px;
+        }
+        ::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--color-grey);
+        border-radius: 2px;
+      }
+        
+    </style>
+</head>
+<body>
+   <section>
+    <div class="top">
+        <img   src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo-1977.png" alt="Apple logo">
+        <h1>Apple Inc</h1>
+    </div>
+    <div class="content">
+        <p>Apple Inc,founded on April 1,1976,by Steve Jobs,Steve Wozniak,
+            and Ronald Wayne, is a multinational technology company headquarter in Cupertino,California.</p>
+       <p>Apple is renowned for its innovative consumer electronics,software,and online service,including the iphone,ipad,Mac,Apple Watch,and Apple TV.</p>
+       <p>The company's success can be attributed to its commitment to sleek design,intuitive user interfaces,and seamless integration between hardware and software. </p>
+    </div>
+   </section>
+</body>
+</html>
